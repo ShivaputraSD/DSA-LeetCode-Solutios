@@ -7,10 +7,7 @@ class Solution {
             curr_water=height[(height[i]<height[j])?i:j]*(j-i);
             if(curr_water>max_water)
                 max_water=curr_water;
-            if(height[i]<height[j])
-                i++;
-            else
-                j--;
+            if(height[i]<height[j])i++;else j--;
         }
         return max_water;
         
